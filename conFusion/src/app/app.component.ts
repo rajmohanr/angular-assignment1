@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule } from '@angular/material';
 
@@ -12,7 +12,7 @@ import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIco
 })
 
 @NgModule({
-  imports: [MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule],
+  imports: [MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, HttpClient, FormsModule ],
 })
 
 export class AppComponent {
