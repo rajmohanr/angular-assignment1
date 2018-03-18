@@ -10,10 +10,17 @@ import { Blog } from '../shared/blog';
 
 export class BlogComponent implements OnInit {
 
+   // blogs: Blog[];
+  // private blogs  = [];
+  private blogs: Blog[] = [];
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('./assets/data/blogData.json')
+   const responseData =  this.http.get('./assets/data/blogData.json')
         .subscribe(response => console.log(response));
+        // console.log('data' + responseData);
+        // blogs: responseData;
   }
+
+
 }
