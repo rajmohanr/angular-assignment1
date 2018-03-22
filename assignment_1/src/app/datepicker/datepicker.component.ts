@@ -15,16 +15,16 @@ export class DatePickerComponent implements OnInit {
 
   constructor() {
     this.dates = [];
-
-   }
+  }
 
   ngOnInit() { 
    
   }
 
   getDate(dateVal){
+    console.log(dateVal)
     let date = new Date(dateVal);
     this.dates.push(date);
-}
+  }
 
 }
