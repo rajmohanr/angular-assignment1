@@ -9,9 +9,11 @@ import { Blog } from '../shared/blog';
 })
 
 export class BlogComponent implements OnInit {
-
+  show: boolean;
   private blogs  = []; 
-  constructor(private http: HttpClient) {};
+  constructor(private http: HttpClient) {
+    this.show = true;
+  };
   
   ngOnInit(): void {
 

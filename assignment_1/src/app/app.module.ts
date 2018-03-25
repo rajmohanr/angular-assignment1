@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule, MatButtonModule, MatNativeDateModule, MatDatepickerModule, MatListModule } from '@angular/material';
 import { DatePipe } from '@angular/common';
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
+ 
 // import {
 //   MatAutocompleteModule,
 //   MatButtonModule,
@@ -65,7 +67,9 @@ import { DatePickerComponent } from './datepicker/datepicker.component';
     MatButtonModule,
     MatNativeDateModule,
     MatDatepickerModule,
-    MatListModule
+    MatListModule,
+    OwlDateTimeModule, 
+    OwlNativeDateTimeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
