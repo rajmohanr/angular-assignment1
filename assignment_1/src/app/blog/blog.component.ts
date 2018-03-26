@@ -9,14 +9,12 @@ import { Blog } from '../shared/blog';
 })
 
 export class BlogComponent implements OnInit {
-  show: boolean;
   private blogs  = []; 
   constructor(private http: HttpClient) {
-    this.show = true;
+  
   };
   
   ngOnInit(): void {
-
     this.http.get('./assets/data/blogData.json').subscribe((res : any[])=>{
       console.log(res);
       this.blogs = res;

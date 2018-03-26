@@ -9,11 +9,16 @@ import { Date } from '../shared/datepicker';
 })
 export class DatePickerComponent implements OnInit {
 
-  picker: string;
+  //newDate: string;
 
   dates: Array<Date>;
 
-  show: boolean;
+  // picker: string;
+
+  // dates: Array<Date>;
+
+  // isValid: boolean;
+  // showSelected: boolean;
 
 
   constructor() {
@@ -24,17 +29,34 @@ export class DatePickerComponent implements OnInit {
    
   }
 
-  getDate(dateVal){
-   console.log(dateVal)
-    let date = new Date(dateVal);
-    this.dates.push(date);
-   //console.log('aa'+ this.dates.push(date))
-    //let date1 = "Apr 1, 2018, 3:44:12 PM";
-    //let eventStartTime = date;
-    //console.log(eventStartTime)
-    //let eventEndTime = +new Date(date1);
-   // let duration = eventEndTime.valueOf() - eventStartTime.valueOf();
-   // console.log(duration)
-  }
+// getDate(): void {
+//   //do sth with the str e.g. 
+//   let date = new Date(name,phone);
+//   this.dates.push(date);
+//   console.log(this.newDate);
+// }
+
+getDate(dateVal){
+  let date = new Date(dateVal);
+  this.dates.push(date);
+  console.log(this.dates)
+
+
+}
+
+  // getDate(dateVal){
+  //  console.log(dateVal)
+  //  this.isValid = true;
+  //  this.showSelected = true;
+  //   let date = new Date(dateVal);
+  //   this.dates.push(date);
+  //  //console.log('aa'+ this.dates.push(date))
+  //   //let date1 = "Apr 1, 2018, 3:44:12 PM";
+  //   //let eventStartTime = date;
+  //   //console.log(eventStartTime)
+  //   //let eventEndTime = +new Date(date1);
+  //  // let duration = eventEndTime.valueOf() - eventStartTime.valueOf();
+  //  // console.log(duration)
+  // }
 
 }
